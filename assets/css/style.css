@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-
-
 /* VARIABLES */
 
 :root {
   /* Color values */
-  --color-background: rgba(200,200,200,1);
+  --color-background: rgb(255, 255, 255);
   --color-block: rgba(255,255,255,1);
   --color-text: rgba(0,0,0,1);
   --color-text-link: rgba(0,0,255,0.8);
@@ -52,37 +50,46 @@ div.page-wrapper {
   width:100%;
   height:auto;
   padding: var(--margin);
-  background-color: darkgray;
+  background-color: white;
   box-sizing: border-box;
 }
 
 /* Do your work here... */
 
-main.layout-container {
-  position:relative;
-  display: block;
-  float:left;
-  width:100%;
-  height:auto;
-  background-color: black;
+* { box-sizing: border-box; }
+
+.carousel {
+  background: #EEE;
+  width: 100%;
+  height: 100vh;
+  display: grid;
 }
 
-.layout-block{
-  width:25%;
-  position:relative;
-  display:block;
-  float:left;
-  clear:right;
-  background-color: yellow;
-  margin:0rem;
-  padding:0rem;
+.carousel-cell {
+  width: 100%;
+  height: 100vh;
+  margin-right: 10px;
+  background: white;
+  counter-increment: carousel-cell;
+  align-items: top;
+  display: grid;
+  position: relative;
+
 }
 
-.layout-block p{
-  text-align:center;
-  margin:0;
-  padding:0;
-  background-color: goldenrod;
+.carousel-cell.img {
+  scroll-snap-align: start;
+  float: left;
+  width: 100%;
+  height: auto;
+  height:var(--viewport-height);
+  padding-top: 0;
+  margin-top:-.2em
+}
+
+#images section .responsive-image {
+  position: relative;
+  width: 100%
 }
 
 
