@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* VARIABLES */
+* { box-sizing: border-box; }
 
 :root {
   /* Color values */
@@ -10,13 +11,17 @@
   --color-text-link: rgba(0,0,255,0.8);
   --color-text-link-hover: rgba(0,0,255,0.4);
   /* Font values */
-  --font-family: 'Helvetica', 'Arial', sans-serif;
-  --font-size: 24px;
+  --font-family: 'KTF2101','Helvetica', 'Arial', sans-serif;
+  --font-size: 16;
   /* Margin value */
   --margin: 1rem;
 }
 
-
+@font-face {
+  font-family: KTF2101;
+  font-weight: 400;
+  src: url(/font/KTF2101-Regular.woff);
+}
 
 /* GENERAL STYLES */
 
@@ -60,12 +65,12 @@ div.page-wrapper {
 
 .carousel {
   background: #EEE;
-  width: 100%;
-  height: 100vh;
-  display: grid;
+  /* width: 100%;
+  height: auto; */
+  /* display: grid; */
 }
 
-.carousel-cell {
+/* .carousel-cell {
   width: 100%;
   height: 100vh;
   margin-right: 10px;
@@ -75,22 +80,46 @@ div.page-wrapper {
   display: grid;
   position: relative;
 
-}
+} */
 
-.carousel-cell.img {
-  scroll-snap-align: start;
-  float: left;
+
+.carousel-cell {
   width: 100%;
   height: auto;
-  height:var(--viewport-height);
-  padding-top: 0;
-  margin-top:-.2em
+  margin-right: 10px;
+  background: white;
+
 }
 
-#images section .responsive-image {
-  position: relative;
-  width: 100%
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
 }
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+
+
+/* #images section .responsive-image {
+  position: relative;
+  width: 100%;
+  display: grid;
+} */
+.thesis{
+  width: 50%;
+  font-family: KTF2101;
+}
+
 
 
 
