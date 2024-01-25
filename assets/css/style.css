@@ -20,7 +20,7 @@
 @font-face {
   font-family: KTF2101;
   font-weight: 400;
-  src: url(font/KTF2101-Regular.woff);
+  src: url('../../font/KTF2101-Regular.otf');
 }
 
 /* GENERAL STYLES */
@@ -64,7 +64,7 @@ div.page-wrapper {
 * { box-sizing: border-box; }
 
 .carousel {
-  background: #EEE;
+  background: transparent;
   /* width: 100%;
   height: auto; */
   /* display: grid; */
@@ -94,6 +94,7 @@ div.page-wrapper {
 
 .carousel-cell-image {
   display: block;
+  position: absolute;
   max-height: 100%;
   margin: 0 auto;
   max-width: 100%;
@@ -119,6 +120,14 @@ div.page-wrapper {
   width: 50%;
   font-family: KTF2101;
 }
+
+#images {
+  scroll-snap-align: start;
+  float: left;
+  width: 100%;
+  height:var(--viewport-height)
+}
+
 
 
 
