@@ -20,6 +20,12 @@
   src: url('../../font/KTF2101-Regular.otf');
 }
 
+@font-face {
+  font-family: KTF2101;
+  font-weight: bold;
+  src: url('../../font/KTF2101-Bold.otf');
+}
+
 /* GENERAL STYLES */
 
 html {
@@ -134,6 +140,7 @@ h2{
 }
 
 h2.title{
+  font-style: bold;
   padding-bottom: 200px;
 }
 
@@ -347,6 +354,11 @@ section.text{
 
 .abstract{
   font-size: 16pt;
+  padding-bottom: 100px;
+}
+
+.caption{
+  padding-bottom: 50px;
 }
 
 .painting{
