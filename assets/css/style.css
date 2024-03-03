@@ -333,12 +333,11 @@ section.footnote{
   /* your 'mobile' overriding css properties here */
 section.text{
   width:100%;
-  font-size: 14pt;
   line-height: 1.5;
   }
 
   section.footnote{
-  width:90%;
+  width:100%;
   padding-bottom: 100px;
   }
 
@@ -347,11 +346,14 @@ section.text{
 }
 
 .abstract{
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 .painting{
   width: 90%;
+}
+p.p2{
+  text-indent: 50.0px;
 }
 
   /* utility classes, mobile */
