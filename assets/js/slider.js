@@ -17,7 +17,7 @@ const images = [
     caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999.",
   },
   {
-    name: " 2.png",
+    name: "2.jpg",
     size: 1,
     caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999",
   },
@@ -27,13 +27,18 @@ const images = [
     caption: "The Chimborazo seen from the Plateau of Tapia, Alexander Von Humboldt, the first scholar to link colonialism to environmental degradation and the subjugation of local communities",
   },
   {
-    name: " 4.png",
-    size: 0.8,
+    name: "4.jpg",
+    size: 0.5,
     caption: "6test",
   },
   {
     name: "5.jpg",
-    size: 0.7,
+    size: 0.4,
+    caption: "7test",
+  }, 
+  {
+    name: " 5.jpg",
+    size: 0.8,
     caption: "7test",
   },
   {
