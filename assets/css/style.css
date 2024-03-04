@@ -21,9 +21,9 @@
 }
 
 @font-face {
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   font-weight: bold;
-  src: url('../../font/KTF2101-Bold.otf');
+  src: url('../../font/Neue\ Haas\ Grotesk\ Text\ W02\ Medium.ttf');
 }
 
 /* GENERAL STYLES */
@@ -116,10 +116,11 @@ p {
   min-height: 20.0px;
   line-height: 1.4;
   font-size: 16;
+  font-family: KTF2101;
 }
 
 p.p2{
-  text-indent: 100.0px;
+  text-indent: 50.0px;
 }
 
 
@@ -137,6 +138,7 @@ h2{
   font-family: KTF2101;
   font-style: bold;
 
+
 }
 
 h2.title{
@@ -153,7 +155,6 @@ h2.title{
 
 
 .titleone{
-  margin-left: 1rem;
   position:absolute;
   display:block;
   z-index: 100;
@@ -173,19 +174,19 @@ h2.title{
 }
 
 .title{
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   /* position:absolute; */
   display:block;
   z-index: 100;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
 }
 
 h2.title-50{
   display:flex;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
   width: 50%;
   padding-bottom: 400px;
@@ -194,7 +195,7 @@ h2.title-50{
 h2.title-50-nopadding{
   display:flex;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
   width: 50%;
 }
@@ -212,6 +213,8 @@ h2.title-50-nopadding{
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+
 }
 
 
@@ -239,13 +242,13 @@ h2.title-50-nopadding{
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap:wrap;
-  min-height: 100vh;
+  /* height: 100vh; */
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   position: relative;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   width: 100%
 }
 
@@ -264,7 +267,6 @@ h2.title-50-nopadding{
   line-height: 1.2;
   font-family: KTF2101;
   color: black;
-
 }
 
 
@@ -326,6 +328,17 @@ section.footnote{
 .text{
   padding-bottom: 100px;
 }
+
+.toc{
+  width: 50%;
+}
+
+.toc-block{
+  display: flex;
+
+}
+
+
 
 /* .frame-top-color {
   right: 0%;
@@ -400,17 +413,17 @@ p.p2{
 h2.title-50{
   display:flex;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
   width: 50%;
   padding-bottom: 20px;
-  margin-left: 50%;
+  /* margin-left: 50%; */
 }
 
 h2.title-50-nopadding{
   display:flex;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
   width: 50%;
 
@@ -419,11 +432,16 @@ h2.title-50-nopadding{
 h2.title{
   display:flex;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
   width: 50%;
   padding-bottom: 20px;
-  margin-left: 50%;
+  /* margin-left: 50%; */
+}
+
+.toc-block{
+  display: flex;
+  padding-bottom: 300px;
 }
   /* utility classes, mobile */
 
