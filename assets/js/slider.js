@@ -29,32 +29,32 @@ const images = [
   {
     name: "4.jpg",
     size: 0.5,
-    caption: "6test",
+    caption: "Archival photos of Donbass: courtesy of Gwent Archives and West Lothian Council",
   },
   {
     name: "5.jpg",
     size: 0.4,
-    caption: "7test",
+    caption: "Donbas 1994-2011, Alexander Chekmenev",
   }, 
   {
     name: " 5.jpg",
     size: 0.8,
-    caption: "7test",
+    caption: "Donbas 6x6, Alexander Chekmenev, Torez, 2011.",
   },
   {
     name: " 6.png",
     size: 1,
-    caption: "test",
+    caption: "Miner with a lamp and tongs. Sketch for the painting “Coal Miners. Change”, Nikolay Kasatkin [Шахтар з лампою і кліщами. Ескіз до картини “Шахтарі. Зміна”, Миколай Касаткін], oil on canvas, 1895",
   },
   {
     name: " 7.png",
     size: 1,
-    caption: "test",
+    caption: "Perevalsk, Donbas 1994-2011, Alexander Chekmenev",
   },
   {
-    name: " 8.png",
-    size: 1,
-    caption: "test",
+    name: "8.png",
+    size: 0.8,
+    caption: "Typical landscape in Donbass, Biletskyi V. - Small mining encyclopaedia. In 3 volumes / Edited by V.S. Biletskyi - Donetsk: Donbas, 2004.",
   },
   {
     name: " 9.png",
