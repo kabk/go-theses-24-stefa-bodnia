@@ -28,13 +28,13 @@ const images = [
   },
   {
     name: "4.jpg",
-    size: 0.5,
+    size: 0.6,
     caption: "Archival photos of Donbass: courtesy of Gwent Archives and West Lothian Council",
   },
   {
     name: "5.jpg",
     size: 0.4,
-    caption: "Donbas 1994-2011, Alexander Chekmenev",
+    caption: "Donbas 1994-2011, Alexander Chekmenev.",
   }, 
   {
     name: " 5.jpg",
@@ -44,83 +44,80 @@ const images = [
   {
     name: " 6.png",
     size: 1,
-    caption: "Miner with a lamp and tongs. Sketch for the painting “Coal Miners. Change”, Nikolay Kasatkin [Шахтар з лампою і кліщами. Ескіз до картини “Шахтарі. Зміна”, Миколай Касаткін], oil on canvas, 1895",
+    caption: "Miner with a lamp and tongs. Sketch for the painting “Coal Miners. Change”, Nikolay Kasatkin [Шахтар з лампою і кліщами. Ескіз до картини “Шахтарі. Зміна”, Миколай Касаткін], oil on canvas, 1895.",
   },
   {
     name: " 7.png",
     size: 1,
-    caption: "Perevalsk, Donbas 1994-2011, Alexander Chekmenev",
+    caption: "Perevalsk, Donbas 1994-2011, Alexander Chekmenev.",
   },
   {
     name: "8.png",
-    size: 0.8,
+    size: 1,
     caption: "Typical landscape in Donbass, Biletskyi V. - Small mining encyclopaedia. In 3 volumes / Edited by V.S. Biletskyi - Donetsk: Donbas, 2004.",
   },
   {
-    name: " 9.png",
+    name: "9.png",
     size: 1,
-    caption: "test",
+    caption: "Obligation of the Société Métallurgique russo-belgian, 1898. <br> ",
   },
   {
-    name: " 10.png",
+    name: "10.png",
     size: 1,
-    caption: "test",
+    caption: "Mundus subterraneus [Shape Of The Universe], Athanasius Kircher, 1665.",
   },
   {
-    name: " 11.png",
+    name: "11.png",
     size: 1,
-    caption: "test",
+    caption: "Belgian Bottle factory in Donetz in the early 20th century.<br>Quay and electric loading bridge in the port of Mariupol on the Sea of Azov.",
   },
-  {
-    name: " 12.png",
-    size: 1,
-    caption: "test",
-  },
+
   {
     name: " 13.png",
     size: 1,
-    caption: "test",
+    caption: "Donbas 1994-2011, Alexander Chekmenev.",
   },
   {
     name: " 14.png",
     size: 1,
-    caption: "test",
+    caption: "Mundus subterraneus [Shape Of The Universe], Athanasius Kircher, 1665.",
   },
   {
     name: " 15.png",
     size: 1,
-    caption: "test",
+    caption: "Dreamland Donbas series, Viktor Marushchenko,2003-2004.",
   },
   {
     name: " 16.png",
     size: 1,
-    caption: "test",
+    caption: "Grushevsky mine, Nikolay Kasatkin, oil on canvas, 1893.",
   },
-  {
-    name: " 17.png",
-    size: 1,
-    caption: "test",
-  },
+  
   {
     name: " 18.png",
     size: 1,
-    caption: "test",
+    caption: "Interior of an above-mine room, Nikolay Kasatkin, oil on canvas, 1895.",
   },
   {
-    name: " 19.png",
-    size: 1,
-    caption: "test",
+    name: "19.png",
+    size: 0.9,
+    caption: "Miners, End of Shift, Nikolay Kasatkin, 1895.",
   },
   {
-    name: " 20.png",
-    size: 1,
-    caption: "test",
+    name: "20.jpg",
+    size: 0.8,
+    caption: "Donbas 1994-2011, Alexander Chekmenev.",
   },
   {
-    name: " 21.png",
+    name: " 23.png",
     size: 1,
-    caption: "test",
+    caption: "Miner’s portrait, sketch for the painting “Miners. Shift”, Nikolay Kasatkin, oil on canvas, 1895.",
   },
+  {
+    name: " 24.png",
+    size: 1,
+    caption: "Покинуті люди, Валерій Милосердов], 1994-1999.",
+  }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
