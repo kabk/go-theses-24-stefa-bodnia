@@ -116,7 +116,7 @@ const images = [
   {
     name: " 24.png",
     size: 1,
-    caption: "Покинуті люди, Валерій Милосердов], 1994-1999.",
+    caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999.",
   }
 ];
 

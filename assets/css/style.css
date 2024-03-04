@@ -284,11 +284,11 @@ a{
 
 .painting{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  /* margin-right: auto; */
   margin-top: auto;
   margin-bottom: auto;
-  width: 65%;
+  width: 100%;
   height: auto;
 
 }
@@ -401,7 +401,7 @@ section.text{
 }
 
 .painting{
-  width: 90%;
+  width: 100%;
 }
 p.p2{
   text-indent: 50.0px;
@@ -438,6 +438,10 @@ h2.title{
   width: 50%;
   padding-bottom: 20px;
   /* margin-left: 50%; */
+}
+
+.text-title{
+  padding-bottom: 100px;
 }
 
 .toc-block{
