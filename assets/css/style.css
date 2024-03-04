@@ -67,42 +67,11 @@ div.page-wrapper {
 
 * { box-sizing: border-box; }
 
-.carousel {
-  background: transparent;
-  margin-top: 0;
-  margin-left: 0;
-  /* width: 100%;
-  height: auto; */
-  /* display: grid; */
-}
-
-
-
-.carousel-cell {
-  width: 100%;
-  height: auto;
-  background: white;
-
-}
-
-
-.carousel-cell-image {
-  display: block;
-  position: absolute;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
-}
-
-
 
 
 .thesis{
-  margin: 1rem;
   font-family: KTF2101;
+  margin: 1rem;
 }
 
 #images {
@@ -124,7 +93,18 @@ p.p2{
 }
 
 
-
+.vl {
+  border-left: 30px solid red;
+  height: 110vh;
+  position: absolute;
+  left: 99%;
+  margin-left: -5px;
+  top: 0;
+  position: fixed;
+  filter: blur(1rem);
+  z-index:10;
+  mix-blend-mode: darken;
+}
 
 .footnote{
 width: 90%;
@@ -221,10 +201,9 @@ h2.title-50-nopadding{
 
 .slides {
   flex-direction: column;
-  height: auto;
   width: 100%;
   overflow-y: scroll;
-  height: 100vh;
+  /* height: 100vh; */
   /*
   -ms-scroll-snap-points-y: repeat(100vh);
   scroll-snap-points-y: repeat(100vh);
@@ -239,15 +218,16 @@ h2.title-50-nopadding{
 }
 
 .slide{
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap:wrap;
+  /* justify-content: flex-start; */
+  /* flex-wrap:wrap; */
   /* height: 100vh; */
-  height: auto;
+  /* height: auto;
   margin-left: auto;
-  margin-right: auto;
-  overflow-y: auto;
+  margin-right: auto; */
+  /* overflow-y: auto; */
   position: relative;
   /* scroll-snap-align: start; */
   width: 100%

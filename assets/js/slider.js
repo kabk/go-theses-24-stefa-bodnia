@@ -4,7 +4,7 @@ const images = [
   {
     name: " 1.png",
     size: 1,
-    caption: "A miner standing with his back to the viewer, holding a light bulb. Etude to the painting Coal Miners. Shift [Шахтар, що стоїть спиною до глядача, з лампочкою в руках. Етюд до картини “Вуглекопи. Зміна”], Nikolay Kasatkin, oil on canvas, 1895",
+    caption: "A miner standing with his back to the viewer, holding a light bulb. Etude to the painting Coal Miners. Shift, Nikolay Kasatkin, oil on canvas, 1895",
   },
   {
     name: "1 .png",
