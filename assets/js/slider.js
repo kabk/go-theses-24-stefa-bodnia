@@ -38,7 +38,7 @@ const images = [
   }, 
   {
     name: " 5.jpg",
-    size: 0.8,
+    size: 1,
     caption: "Donbas 6x6, Alexander Chekmenev, Torez, 2011.",
   },
   {
@@ -117,7 +117,67 @@ const images = [
     name: " 24.png",
     size: 1,
     caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999.",
-  }
+  },
+  {
+    name: " 25.png",
+    size: 1,
+    caption: "De re metallica (Latin for On the Nature of Metals [Minerals]), Georgius Agricol, 1556. The first authoritative text on mining refining metals. Impact extraction.",
+  },  
+  {
+    name: " 26.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 27.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 28.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 29.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 30.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 31.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 34.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 35.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 36.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 39.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
+  {
+    name: " 40.png",
+    size: 1,
+    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
