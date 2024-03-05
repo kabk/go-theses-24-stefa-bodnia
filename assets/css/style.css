@@ -94,15 +94,15 @@ p.p2{
 
 
 .vl {
-  border-left: 30px solid red;
+  border-left: 40px solid red;
   height: 110vh;
   position: absolute;
   left: 99%;
-  margin-left: -5px;
+  margin-left: -2px;
   top: 0;
   position: fixed;
-  filter: blur(1rem);
-  z-index:10;
+  filter: blur(0.8rem);
+  z-index:100;
   mix-blend-mode: darken;
 }
 

@@ -131,52 +131,58 @@ const images = [
   {
     name: " 27.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Halite is the mineral name for the substance that everyone knows as 'salt'.",
   },
   {
     name: " 28.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Morphology of crystals: a - b - tamarugite; c - h - pikkerringite. Eq.: a - 3500; b - 2000; c - 2000; d - 3500; e - 2000; f - 750; g - 1500; h - 2000",
   },
   {
     name: " 29.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Personal archive. 2016-2018.",
   },
   {
     name: " 30.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Personal archive. 2016-2018.",
   },
   {
     name: " 31.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Personal archive. 2016-2018.",
   },
   {
     name: " 34.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Personal archive. 2016-2018.",
   },
+  {
+    name: " 45.png",
+    size: 1,
+    caption: "Iron Ore",
+  },
+
   {
     name: " 35.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Miner-puller, Nikolai Kasatkin, 1920s",
   },
   {
     name: " 36.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Black snow in Kramatorsk, 2009.",
   },
   {
     name: " 39.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Neon",
   },
   {
     name: " 40.png",
     size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
+    caption: "Satelite image. Sea of Azov by Jacques Descloitres, MODIS Rapid Response Team, NASA/GSFC.",
   },
 ];
 
