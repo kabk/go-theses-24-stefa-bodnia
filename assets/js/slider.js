@@ -249,19 +249,4 @@ document.addEventListener("DOMContentLoaded", () => {
       nextSlide();
     }
   });
-
-  sliderContainer.addEventListener("mousemove", (e) => {
-    console.log(e.clientX);
-    if (e.clientX < sliderContainer.getBoundingClientRect().width / 2) {
-      console.log('left');
-      document.body.style.cursor = 'w-resize'
-    } else {
-      document.body.style.cursor = "e-resize";
-
-    }
-
-  });
-  sliderContainer.addEventListener('mouseleave', () => {
-    document.body.style.cursor = 'auto';
-  })
 });
