@@ -257,10 +257,6 @@ a{
   text-decoration: none;
 }
 
-#slider img {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-}
 
 .painting{
   display: block;
@@ -350,6 +346,13 @@ section.footnote{
 
 /* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
 /* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
+
+@media (min-width: 780px) {
+  #slider img {
+      -webkit-transform: translate3d(0, 0, 0);
+      -webkit-transform-style: preserve-3d;
+    }
+}
 
 @media (max-width: 779px) {
 

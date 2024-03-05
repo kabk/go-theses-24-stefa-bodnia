@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   const updateSlider = () => {
-    const caption = images[currentIndex].caption;
+    const caption = images[currentIndex % images.length].caption;
     captionsBlock.innerHTML = caption;
     const imagesInSlider = slider.children;
     let leftBorderCoordinate = 0;
@@ -249,4 +249,5 @@ document.addEventListener("DOMContentLoaded", () => {
       nextSlide();
     }
   });
+
 });

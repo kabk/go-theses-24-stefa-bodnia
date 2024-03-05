@@ -1,13 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-
+  cursor: auto;
 }
+
 
 #slider-container {
   overflow: hidden;
   background-color: #333333;
-  
+  z-index: -2;  
 }
 
 
@@ -17,21 +18,20 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50%;
-  z-index: 1;
-  /* Ensure the pseudo-elements are above the slider content */
+  width: 50vw;
+  z-index: 100;
 }
 
 #slider-container:before {
   left: 0;
   cursor: w-resize;
-  /* Cursor for the left half (west-resize) */
+  width: 50vw;
 }
 
 #slider-container:after {
   right: 0;
   cursor: e-resize;
-  /* Cursor for the right half (east-resize) */
+  width: 50vw;
 }
 
 #slider {
@@ -43,6 +43,6 @@
 
 }
 
-#images{
+#images {
   mix-blend-mode: multiply;
 }
