@@ -6,33 +6,10 @@
 
 #slider-container {
   overflow: hidden;
-  background-color: #333333;
-  
+  background-color: #222222;
 }
 
 
-#slider-container:before,
-#slider-container:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: 1;
-  /* Ensure the pseudo-elements are above the slider content */
-}
-
-#slider-container:before {
-  left: 0;
-  cursor: w-resize;
-  /* Cursor for the left half (west-resize) */
-}
-
-#slider-container:after {
-  right: 0;
-  cursor: e-resize;
-  /* Cursor for the right half (east-resize) */
-}
 
 #slider {
   display: flex;
@@ -43,6 +20,6 @@
 
 }
 
-#images{
+#images {
   mix-blend-mode: multiply;
 }
