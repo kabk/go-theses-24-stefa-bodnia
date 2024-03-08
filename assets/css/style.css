@@ -260,11 +260,11 @@ a{
 
 .painting{
   display: block;
-  margin-left: 0;
-  /* margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 100%;
+  width: 80%;
   height: auto;
 
 }
@@ -313,6 +313,15 @@ section.footnote{
 .toc-block{
   display: flex;
 
+}
+p.quote{
+  width: 100%;
+  font-size: 24pt;
+  line-height: 1.2;
+  font-family: KTF2101;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  margin-left: 0%;
 }
 
 
