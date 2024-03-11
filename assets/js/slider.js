@@ -194,36 +194,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentIndex = 0;
 
-  const insertImages = () => {
-    images.forEach((image) => {
-      const img = document.createElement("img");
-      img.src = folder + image.name;
-      slider.appendChild(img);
-      img.style.height = image.size * 100 + "%";
-    });
-
-    const intervalDuration = 2500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
-    let autoplayInterval;
-
-    const startAutoplay = () => {
-     autoplayInterval = setInterval(() => {
-        nextSlide();
-     }, intervalDuration);
+  const startAutoplay = () => {
+    autoplayInterval = setInterval(() => {
+      nextSlide();
+    }, intervalDuration);
   };
 
-    const stopAutoplay = () => {
-      clearInterval(autoplayInterval);
-    };
+  const stopAutoplay = () => {
+    clearInterval(autoplayInterval);
+  };
 
-    // Start autoplay when the document is ready
-    startAutoplay();
+  // Start autoplay when the document is ready
+  startAutoplay();
 
   // Stop autoplay on mouseover and resume on mouseleave
-    sliderContainer.addEventListener("mouseover", stopAutoplay);
-    sliderContainer.addEventListener("mouseleave", startAutoplay);
+  sliderContainer.addEventListener("mouseover", stopAutoplay);
+  sliderContainer.addEventListener("mouseleave", () => {
+    if (!isTouchDevice()) {
+      startAutoplay();
+    }
+  });
 
-  };
-
+   // Touch event listeners for horizontal scrolling on mobile
+   let touchStartX = 0;
+   let touchEndX = 0;
+ 
+   sliderContainer.addEventListener("touchstart", (e) => {
+     touchStartX = e.touches[0].clientX;
+     stopAutoplay(); // Stop autoplay on touchstart
+   });
+ 
+   sliderContainer.addEventListener("touchmove", (e) => {
+     touchEndX = e.touches[0].clientX;
+   });
+ 
+   sliderContainer.addEventListener("touchend", () => {
+     const swipeThreshold = 50; // Adjust the threshold as needed
+     const swipeDistance = touchEndX - touchStartX;
+ 
+     if (swipeDistance > swipeThreshold) {
+       prevSlide();
+     } else if (swipeDistance < -swipeThreshold) {
+       nextSlide();
+     }
+ 
+     startAutoplay(); // Resume autoplay on touchend
+   });
+ 
+   // Function to check if the device is a touch device
+   function isTouchDevice() {
+     return "ontouchstart" in window || navigator.msMaxTouchPoints;
+   }
   
   
   const updateSlider = () => {
@@ -289,28 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.cursor = 'auto';
   })
 
-  // Touch event listeners for horizontal scrolling on mobile
-  let touchStartX = 0;
-  let touchEndX = 0;
 
-  sliderContainer.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches[0].clientX;
-  });
-
-  sliderContainer.addEventListener("touchmove", (e) => {
-    touchEndX = e.touches[0].clientX;
-  });
-
-  sliderContainer.addEventListener("touchend", () => {
-    const swipeThreshold = 50; // Adjust the threshold as needed
-    const swipeDistance = touchEndX - touchStartX;
-
-    if (swipeDistance > swipeThreshold) {
-      prevSlide();
-    } else if (swipeDistance < -swipeThreshold) {
-      nextSlide();
-    }
-  });
 
 
 });
