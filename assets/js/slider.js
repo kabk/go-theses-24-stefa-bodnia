@@ -193,9 +193,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const captionsBlock = document.getElementsByClassName('captions')[0];
 
   let currentIndex = 0;
-  let touchStartX = 0;
-  let touchEndX = 0;
-  let isAutoplayPaused = false;
 
   const insertImages = () => {
     images.forEach((image) => {
@@ -204,7 +201,31 @@ document.addEventListener("DOMContentLoaded", () => {
       slider.appendChild(img);
       img.style.height = image.size * 100 + "%";
     });
+
+    const intervalDuration = 3500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
+    let autoplayInterval;
+
+    const startAutoplay = () => {
+     autoplayInterval = setInterval(() => {
+        nextSlide();
+     }, intervalDuration);
   };
+
+    const stopAutoplay = () => {
+      clearInterval(autoplayInterval);
+    };
+
+    // Start autoplay when the document is ready
+    startAutoplay();
+
+  // Stop autoplay on mouseover and resume on mouseleave
+  sliderContainer.addEventListener("mouseover", stopAutoplay);
+  sliderContainer.addEventListener("mouseleave", startAutoplay);
+
+  };
+
+  
+  
   const updateSlider = () => {
     const caption = images[currentIndex % images.length].caption;
     captionsBlock.innerHTML = caption;
@@ -219,33 +240,11 @@ document.addEventListener("DOMContentLoaded", () => {
     slider.style.transform = "translateX(" + newPosition + ")";
   };
 
-  const startAutoplay = () => {
-    if (!isAutoplayPaused) {
-      const intervalDuration = 4500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
-      return setInterval(() => {
-        nextSlide();
-      }, intervalDuration);
-    }
-    return null;
-  };
-
-  let autoplayInterval = startAutoplay();
-
-  const stopAutoplay = () => {
-    clearInterval(autoplayInterval);
-    isAutoplayPaused = true;
-  };
-
-  const resumeAutoplay = () => {
-    if (isAutoplayPaused) {
-      autoplayInterval = startAutoplay();
-      isAutoplayPaused = false;
-    }
-  };
 
   insertImages();
-  updateSlider();
+  updateSlider()
 
+  
   const prevSlide = () => {
     if (currentIndex !== 0) {
       currentIndex--;
@@ -276,37 +275,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   sliderContainer.addEventListener("mousemove", (e) => {
+    console.log(e.clientX);
     if (e.clientX < sliderContainer.getBoundingClientRect().width / 2) {
-      document.body.style.cursor = 'w-resize';
+      console.log('left');
+      document.body.style.cursor = 'w-resize'
     } else {
       document.body.style.cursor = "e-resize";
-    }
-  });
 
+    }
+
+  });
   sliderContainer.addEventListener('mouseleave', () => {
     document.body.style.cursor = 'auto';
-    resumeAutoplay(); // Resume autoplay on mouseleave
-  });
+  })
 
-  sliderContainer.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches[0].clientX;
-    stopAutoplay(); // Stop autoplay on touchstart
-  });
 
-  sliderContainer.addEventListener("touchmove", (e) => {
-    touchEndX = e.touches[0].clientX;
-  });
 
-  sliderContainer.addEventListener("touchend", () => {
-    const swipeThreshold = 50; // Adjust the threshold as needed
-    const swipeDistance = touchEndX - touchStartX;
-
-    if (swipeDistance > swipeThreshold) {
-      prevSlide();
-    } else if (swipeDistance < -swipeThreshold) {
-      nextSlide();
-    }
-
-    resumeAutoplay(); // Resume autoplay on touchend
-  });
 });
