@@ -187,6 +187,7 @@ const images = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
+  
   const slider = document.getElementById("slider");
   const sliderContainer = document.getElementById("slider-container");
   const captionsBlock = document.getElementsByClassName('captions')[0];
@@ -200,7 +201,30 @@ document.addEventListener("DOMContentLoaded", () => {
       slider.appendChild(img);
       img.style.height = image.size * 100 + "%";
     });
+
+    const intervalDuration = 2500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
+    let autoplayInterval;
+
+    const startAutoplay = () => {
+     autoplayInterval = setInterval(() => {
+        nextSlide();
+     }, intervalDuration);
   };
+
+    const stopAutoplay = () => {
+      clearInterval(autoplayInterval);
+    };
+
+    // Start autoplay when the document is ready
+    startAutoplay();
+
+  // Stop autoplay on mouseover and resume on mouseleave
+    sliderContainer.addEventListener("mouseover", stopAutoplay);
+    sliderContainer.addEventListener("mouseleave", startAutoplay);
+
+  };
+
+  
   
   const updateSlider = () => {
     const caption = images[currentIndex % images.length].caption;
@@ -264,4 +288,29 @@ document.addEventListener("DOMContentLoaded", () => {
   sliderContainer.addEventListener('mouseleave', () => {
     document.body.style.cursor = 'auto';
   })
+
+  // Touch event listeners for horizontal scrolling on mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  sliderContainer.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+  });
+
+  sliderContainer.addEventListener("touchmove", (e) => {
+    touchEndX = e.touches[0].clientX;
+  });
+
+  sliderContainer.addEventListener("touchend", () => {
+    const swipeThreshold = 50; // Adjust the threshold as needed
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (swipeDistance > swipeThreshold) {
+      prevSlide();
+    } else if (swipeDistance < -swipeThreshold) {
+      nextSlide();
+    }
+  });
+
+
 });
