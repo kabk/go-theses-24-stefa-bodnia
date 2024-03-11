@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img.style.height = image.size * 100 + "%";
     });
 
-    const intervalDuration = 3500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
+    const intervalDuration = 2500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
     let autoplayInterval;
 
     const startAutoplay = () => {
