@@ -2,293 +2,291 @@ const folder = "./img/visualessay/";
 
 const images = [
   {
-    name: " 1.png",
+    id: "image1",
+    name: "06.jpg",
     size: 1,
-    caption: "A miner standing with his back to the viewer, holding a light bulb. Etude to the painting Coal Miners. Shift, Nikolay Kasatkin, oil on canvas, 1895",
+    caption: "Coal Mine, Land Mine, The Body of Mine, \n Book, 270 x 200 mm; charcoal, digital print, comcolor, silkscreen.",
   },
   {
-    name: "1 .png",
-    size: 0.15,
-    caption: "1 Kopiika, 1992. Coin was produced in Luhansk, Ukraine",
+
+    name: "6.gif",
+    size: 0.9,
+    caption: "Coal Mine, Land Mine, The Body of Mine, \n Book, 270 x 200 mm; charcoal, digital print, comcolor, silkscreen.",
   },
   {
-    name: "1.png",
+    id: "image2",
+    name: "01.jpg",
     size: 1,
-    caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999.",
+    caption: "Coal Mine, Land Mine, The Body of Mine, Prints",
   },
   {
-    name: "2.jpg",
+    name: "00.jpg",
     size: 1,
-    caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999",
+    caption: "Left: The Portrait. Neon sculpture in collaboration with Alexandra Hunts.",
   },
+
+
+
   {
-    name: " 3.png",
+    name: "Pochen.png",
     size: 1,
-    caption: "The Chimborazo seen from the Plateau of Tapia, Alexander Von Humboldt, the first scholar to link colonialism to environmental degradation and the subjugation of local communities",
+    caption: "Pochen Biennale 2024, Chemnitz",
   },
   {
-    name: "4.jpg",
-    size: 0.6,
-    caption: "Archival photos of Donbass: courtesy of Gwent Archives and West Lothian Council",
-  },
-  {
-    name: "5.jpg",
-    size: 0.4,
-    caption: "Donbas 1994-2011, Alexander Chekmenev.",
+    name: "DSC_4232-min-2.jpg",
+    size: 1,
+    caption: "Pochen Biennale 2024, Chemnitz",
   }, 
   {
-    name: " 5.jpg",
+    name: "02-0.gif",
     size: 1,
-    caption: "Donbas 6x6, Alexander Chekmenev, Torez, 2011.",
+    caption: "Kyiv Biennial 2023, visual identity with Aliona Ciobanu",
   },
   {
-    name: " 6.png",
+    name: "01-01.jpg",
     size: 1,
-    caption: "Miner with a lamp and tongs. Sketch for the painting “Coal Miners. Change”, Nikolay Kasatkin [Шахтар з лампою і кліщами. Ескіз до картини “Шахтарі. Зміна”, Миколай Касаткін], oil on canvas, 1895.",
-  },
-  {
-    name: " 7.png",
-    size: 1,
-    caption: "Perevalsk, Donbas 1994-2011, Alexander Chekmenev.",
-  },
-  {
-    name: "8.png",
-    size: 1,
-    caption: "Typical landscape in Donbass, Biletskyi V. - Small mining encyclopaedia. In 3 volumes / Edited by V.S. Biletskyi - Donetsk: Donbas, 2004.",
-  },
-  {
-    name: "9.png",
-    size: 1,
-    caption: "Obligation of the Société Métallurgique russo-belgian, 1898. <br> ",
-  },
-  {
-    name: "10.png",
-    size: 1,
-    caption: "Mundus subterraneus [Shape Of The Universe], Athanasius Kircher, 1665.",
-  },
-  {
-    name: "11.png",
-    size: 1,
-    caption: "Belgian Bottle factory in Donetz in the early 20th century.<br>Quay and electric loading bridge in the port of Mariupol on the Sea of Azov.",
+    caption: "Kyiv Biennial 2023, visual identity with Aliona Ciobanu",
   },
 
   {
-    name: " 13.png",
+    name: "NoTraces.jpg",
     size: 1,
-    caption: "Donbas 1994-2011, Alexander Chekmenev.",
+    caption: "No Traces Left",
   },
   {
-    name: " 14.png",
+    name: "NoTraces-01.jpg",
     size: 1,
-    caption: "Mundus subterraneus [Shape Of The Universe], Athanasius Kircher, 1665.",
-  },
-  {
-    name: " 15.png",
-    size: 1,
-    caption: "Dreamland Donbas series, Viktor Marushchenko,2003-2004.",
-  },
-  {
-    name: " 16.png",
-    size: 1,
-    caption: "Grushevsky mine, Nikolay Kasatkin, oil on canvas, 1893.",
-  },
-  
-  {
-    name: " 18.png",
-    size: 1,
-    caption: "Interior of an above-mine room, Nikolay Kasatkin, oil on canvas, 1895.",
-  },
-  {
-    name: "19.png",
-    size: 0.9,
-    caption: "Miners, End of Shift, Nikolay Kasatkin, 1895.",
-  },
-  {
-    name: "20.jpg",
-    size: 0.8,
-    caption: "Donbas 1994-2011, Alexander Chekmenev.",
-  },
-  {
-    name: " 23.png",
-    size: 1,
-    caption: "Miner’s portrait, sketch for the painting “Miners. Shift”, Nikolay Kasatkin, oil on canvas, 1895.",
-  },
-  {
-    name: " 24.png",
-    size: 1,
-    caption: "Abandoned People, Valerii Miloserdov, [Покинуті люди, Валерій Милосердов], 1994-1999.",
-  },
-  {
-    name: " 25.png",
-    size: 1,
-    caption: "De re metallica (Latin for On the Nature of Metals [Minerals]), Georgius Agricol, 1556. The first authoritative text on mining refining metals. Impact extraction.",
-  },  
-  {
-    name: " 26.png",
-    size: 1,
-    caption: "Unearthing the Landscape, Stefaniia Bodnia, 2023.",
-  },
-  {
-    name: " 27.png",
-    size: 1,
-    caption: "Halite is the mineral name for the substance that everyone knows as 'salt'.",
-  },
-  {
-    name: " 28.png",
-    size: 1,
-    caption: "Morphology of crystals: a - b - tamarugite; c - h - pikkerringite. Eq.: a - 3500; b - 2000; c - 2000; d - 3500; e - 2000; f - 750; g - 1500; h - 2000",
-  },
-  {
-    name: " 29.png",
-    size: 1,
-    caption: "Personal archive. 2016-2018.",
-  },
-  {
-    name: " 30.png",
-    size: 1,
-    caption: "Personal archive. 2016-2018.",
-  },
-  {
-    name: " 31.png",
-    size: 1,
-    caption: "Personal archive. 2016-2018.",
-  },
-  {
-    name: " 34.png",
-    size: 1,
-    caption: "Personal archive. 2016-2018.",
-  },
-  {
-    name: " 45.png",
-    size: 1,
-    caption: "Iron Ore",
+    caption: "No Traces Left",
   },
 
   {
-    name: " 35.png",
+    name: "MicrosoftTeams-image.png",
     size: 1,
-    caption: "Miner-puller, Nikolai Kasatkin, 1920s",
+    caption: "No Traces Left",
+  },
+
+  {
+    name: "IMG_6543 copy.jpg",
+    size: 1,
+    caption: "Polyesther Palace, flexible publication, series of posters",
   },
   {
-    name: " 36.png",
+    name: "12.PNG",
+    size: 0.6,
+    caption: "Polyesther Palace, flexible publication, series of posters",
+  }, 
+  {
+    name: "IMG_1241.JPG",
     size: 1,
-    caption: "Black snow in Kramatorsk, 2009.",
+    caption: "De fence, silkprinted poster, 2021",
   },
   {
-    name: " 39.png",
+    name:"IMG_1243.JPG",
     size: 1,
-    caption: "Neon",
+    caption: "De fence, silkprinted poster, 2021",
   },
+  // {
+  //   name:"IMG_0903.jpg",
+  //   size:1,
+  //   caption: "Coal Mine, Land Mine, The Body of Mine, \n Book, 270 x 200 mm; charcoal, digital print, comcolor, silkscreen.",
+  // },
   {
-    name: " 40.png",
-    size: 1,
-    caption: "Satelite image. Sea of Azov by Jacques Descloitres, MODIS Rapid Response Team, NASA/GSFC.",
+    name:"01-min.jpg",
+    size:1,
+    caption: "",
   },
+
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+
+
+// document.addEventListener("DOMContentLoaded", () => {
   
+//   const slider = document.getElementById("slider");
+//   const sliderContainer = document.getElementById("slider-container");
+//   const captionsBlock = document.getElementsByClassName('captions')[0];
+
+//   let currentIndex = 0;
+
+//   const insertImages = () => {
+//     images.forEach((image) => {
+//       const img = document.createElement("img");
+//       img.src = folder + image.name;
+//       slider.appendChild(img);
+//       img.style.height = image.size * 100 + "%";
+//     });
+
+//     const intervalDuration = 2500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
+//     let autoplayInterval;
+
+//     const startAutoplay = () => {
+//      autoplayInterval = setInterval(() => {
+//         nextSlide();
+//      }, intervalDuration);
+//   };
+
+//     const stopAutoplay = () => {
+//       clearInterval(autoplayInterval);
+//     };
+
+//     // Start autoplay when the document is ready
+//     startAutoplay();
+
+//   // Stop autoplay on mouseover and resume on mouseleave
+//   sliderContainer.addEventListener("mouseover", stopAutoplay);
+//   sliderContainer.addEventListener("mouseleave", startAutoplay);
+
+//   };
+
+  
+  
+//   const updateSlider = () => {
+//     const caption = images[currentIndex % images.length].caption;
+//     captionsBlock.innerHTML = caption;
+//     const imagesInSlider = slider.children;
+//     let leftBorderCoordinate = 0;
+//     for (let i = 0; i < currentIndex; i++) {
+//       leftBorderCoordinate += imagesInSlider[i].getBoundingClientRect().width;
+//     }
+
+//     const newPosition = -leftBorderCoordinate + "px";
+
+//     slider.style.transform = "translateX(" + newPosition + ")";
+//   };
+
+
+//   insertImages();
+//   updateSlider()
+
+  
+//   const prevSlide = () => {
+//     if (currentIndex !== 0) {
+//       currentIndex--;
+//       updateSlider();
+//       console.log(images[currentIndex]);
+//     }
+//   };
+
+//   const nextSlide = () => {
+//     currentIndex++;
+//     updateSlider();
+//     console.log(images[currentIndex]);
+
+//     if ((currentIndex - 1) % images.length === 0) {
+//       insertImages();
+//     }
+//   };
+
+//   sliderContainer.parentElement.addEventListener("click", function (event) {
+//     const sliderRect = sliderContainer.getBoundingClientRect();
+//     const clickX = event.clientX - sliderRect.left;
+
+//     if (clickX < sliderRect.width / 2) {
+//       prevSlide();
+//     } else {
+//       nextSlide();
+//     }
+//   });
+
+//   sliderContainer.addEventListener("mousemove", (e) => {
+//     console.log(e.clientX);
+//     if (e.clientX < sliderContainer.getBoundingClientRect().width / 2) {
+//       console.log('left');
+//       document.body.style.cursor = 'w-resize'
+//     } else {
+//       document.body.style.cursor = "e-resize";
+
+//     }
+
+//   });
+//   sliderContainer.addEventListener('mouseleave', () => {
+//     document.body.style.cursor = 'auto';
+//   })
+
+document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("slider");
   const sliderContainer = document.getElementById("slider-container");
-  const captionsBlock = document.getElementsByClassName('captions')[0];
-
+  const captionsBlock = document.querySelector('.captions');
   let currentIndex = 0;
 
-  const insertImages = () => {
-    images.forEach((image) => {
-      const img = document.createElement("img");
-      img.src = folder + image.name;
-      slider.appendChild(img);
+  // Insert images only once
+ 
+  images.forEach((image) => {
+    const img = document.createElement("img");
+    img.src = folder + image.name;
+    img.id = image.id; // Assign the id from the data
+    img.alt = image.caption;
+  
+
+
+  
+
+
+
+
+  const applyStyles = () => {
+    if (window.innerWidth <= 768) { // Mobile view
+      img.style.width = "100vw";
+      // img.style.height = "auto"; // Keep aspect ratio
+    } else { // Desktop view
       img.style.height = image.size * 100 + "%";
-    });
-
-    const intervalDuration = 2500; // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
-    let autoplayInterval;
-
-    const startAutoplay = () => {
-     autoplayInterval = setInterval(() => {
-        nextSlide();
-     }, intervalDuration);
+      img.style.width = "auto"; // Allow height to dominate
+    }
   };
 
-    const stopAutoplay = () => {
-      clearInterval(autoplayInterval);
-    };
+  // Apply styles on load
+  applyStyles();
 
-    // Start autoplay when the document is ready
-    startAutoplay();
+  // Reapply styles on resize
+  window.addEventListener("resize", applyStyles);
 
-  // Stop autoplay on mouseover and resume on mouseleave
-  sliderContainer.addEventListener("mouseover", stopAutoplay);
-  sliderContainer.addEventListener("mouseleave", startAutoplay);
+  slider.appendChild(img);
+});
 
-  };
 
-  
-  
+
+
   const updateSlider = () => {
-    const caption = images[currentIndex % images.length].caption;
-    captionsBlock.innerHTML = caption;
-    const imagesInSlider = slider.children;
-    let leftBorderCoordinate = 0;
-    for (let i = 0; i < currentIndex; i++) {
-      leftBorderCoordinate += imagesInSlider[i].getBoundingClientRect().width;
-    }
-
-    const newPosition = -leftBorderCoordinate + "px";
-
-    slider.style.transform = "translateX(" + newPosition + ")";
+    captionsBlock.textContent = images[currentIndex % images.length].caption;
+    slider.style.transform = `translateX(-${slider.children[currentIndex].offsetLeft}px)`;
   };
-
-
-  insertImages();
-  updateSlider()
-
   
+
   const prevSlide = () => {
-    if (currentIndex !== 0) {
-      currentIndex--;
-      updateSlider();
-      console.log(images[currentIndex]);
-    }
+    if (currentIndex > 0) currentIndex--;
+    updateSlider();
   };
 
   const nextSlide = () => {
-    currentIndex++;
+    currentIndex = (currentIndex + 1) % images.length;
     updateSlider();
-    console.log(images[currentIndex]);
-
-    if ((currentIndex - 1) % images.length === 0) {
-      insertImages();
-    }
   };
 
-  sliderContainer.parentElement.addEventListener("click", function (event) {
-    const sliderRect = sliderContainer.getBoundingClientRect();
-    const clickX = event.clientX - sliderRect.left;
-
-    if (clickX < sliderRect.width / 2) {
+  // Handle click navigation and cursor updates
+  sliderContainer.addEventListener("click", (event) => {
+    if (event.clientX < sliderContainer.getBoundingClientRect().width / 2) {
       prevSlide();
     } else {
       nextSlide();
     }
   });
 
+  let lastCursor = ''; // Track last cursor state
   sliderContainer.addEventListener("mousemove", (e) => {
-    console.log(e.clientX);
-    if (e.clientX < sliderContainer.getBoundingClientRect().width / 2) {
-      console.log('left');
-      document.body.style.cursor = 'w-resize'
-    } else {
-      document.body.style.cursor = "e-resize";
-
+    const newCursor = e.clientX < sliderContainer.getBoundingClientRect().width / 2 ? 'w-resize' : 'e-resize';
+    if (newCursor !== lastCursor) {
+      document.body.style.cursor = newCursor;
+      lastCursor = newCursor;
     }
-
   });
+
   sliderContainer.addEventListener('mouseleave', () => {
     document.body.style.cursor = 'auto';
-  })
+  });
 
-
-
+  // Initialize slider position
+  updateSlider();
 });
+
+
+

@@ -7,21 +7,14 @@
   --color-text-link: rgba(0,0,255,0.8);
   --color-text-link-hover: rgba(0,0,255,0.4);
   /* Font values */
-  --font-family: 'KTF2101','Helvetica', 'Arial', sans-serif;
-  --font-size: 16;
+  --font-family: 'Neue Haas Unica','Helvetica', 'Arial', sans-serif;
+  --font-size: 11pt;
   /* Margin value */
 }
 
 @font-face {
-  font-family: KTF2101;
-  font-weight: 400;
-  src: url('../../font/KTF2101-Regular.otf');
-}
-
-@font-face {
-  font-family: Neue Haas Grotesk Text W02 Medium;
-  font-weight: bold;
-  src: url('../../font/Neue\ Haas\ Grotesk\ Text\ W02\ Medium.ttf');
+  font-family: Neue Haas Unica;
+  src: url('/font/NeueHaasUnicaPro-Bold.otf')
 }
 
 /* GENERAL STYLES */
@@ -40,10 +33,13 @@ body {
   width:100%;
   height:auto;
   overflow-y:auto;
+
 }
 
 
-
+.slide{
+  margin-top: 10px;
+}
 /* PAGE STYLES */
 
 /* page structure */
@@ -68,23 +64,19 @@ div.page-wrapper {
 
 
 
-.thesis{
-  font-family: KTF2101;
-  margin: 1rem;
-}
+
 
 #images {
   scroll-snap-align: start;
   float: left;
-  width: 100%;
   height:var(--viewport-height)
 }
 
 p {
   min-height: 20.0px;
-  line-height: 1.4;
-  font-size: 16;
-  font-family: KTF2101;
+  line-height: 1.2;
+  font-size: 11pt;
+  font-family: Neue Haas Unica;
 }
 
 p.p2{
@@ -104,83 +96,33 @@ p.p2{
   mix-blend-mode: darken;
 } */
 
-.gradient-black:before {
-  content: '';
-  top: 0;
-  right: -20px;
-  bottom: 0;
-  filter: blur(1rem);
-  width: 3%;
-  background:linear-gradient(rgba(255,255,255,1) 0%, rgba(0,0,0,1) 45%, rgba(50,19,19,1) 62%, rgba(255,0,0,1) 87%, rgba(255,255,255,1) 100%);
-  position: absolute;
-  z-index: -1;
-}
 
 
-
-
-.footnote{
-width: 90%;
-/* position: -webkit-sticky; */
-margin-left: 5%;
-font-family: KTF2101;
-position: sticky;
-top: 0;
-position: -webkit-sticky; /* for Safari */
-align-self: flex-start;
-overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
 
 h2{
-  font-size: 12pt;
-  font-family: KTF2101;
-  font-style: bold;
-
-
+  font-size: 11pt;
+  font-family: Neue Haas Unica;
 }
 
-h2.title{
-  font-style: bold;
-  padding-bottom: 200px;
-}
-
-.title-essay{
-  font-size: 12pt;
-  padding-bottom: 30px;
-  font-family: KTF2101;
-  font-style: normal;
-}
 
 
 .titleone{
-  position:absolute;
-  display:block;
+  position: absolute;
+  display: block;
   z-index: 100;
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Unica;
   color: white;
   max-width: 40%;
   margin-left: 1rem;
+  font-size: 11pt;
 }
 
 .captions {
   top:0;
-  font-family: KTF2101;
+  font-family: Neue Haas Unica;
   position: absolute;
-  left: 50%;
+  left: 40%;
   color: white;
   z-index: 100;
 }
@@ -191,172 +133,35 @@ h2.title{
   display:block;
   z-index: 100;
   top:0;
-  font-family: Neue Haas Grotesk Text W02 Medium;
-  color: black;
+  font-family: Neue Haas Unica;
+  color: white;
+  font-size: 11pt;
 }
 
 h2.title-50{
-  display:flex;
-  top:0;
-  font-family: Neue Haas Grotesk Text W02 Medium;
+  font-weight:normal;
+  font-family: Neue Haas Unica;
   color: black;
-  width: 50%;
-  padding-bottom: 400px;
-}
-
-h2.title-50-nopadding{
-  display:flex;
-  top:0;
-  font-family: Neue Haas Grotesk Text W02 Medium;
-  color: black;
-  width: 50%;
-}
-
-
-.caption{
-  /* /* position: fixed;
-  z-index: 100;
-  top:0;
-  margin-left: 50%;
-  color: white;
-  width: 100%; */
-  
-  font-family: KTF2101; 
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-
-}
-
-.biblio {
-  width:50%;
-  left: 50%;
-  padding-left:50px; 
-  text-indent: -50px;
-  line-height: 1.4;
-  font-size: 16; 
+  width: 38%;
   padding-bottom: 100px;
-}
-
-
-.slides {
-  position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  width: 100%;
-  overflow-y: scroll;
-  /* height: 100vh; */
-  /*
-  -ms-scroll-snap-points-y: repeat(100vh);
-  scroll-snap-points-y: repeat(100vh);
-  */
-  -ms-scroll-snap-type:y proximity;
-  scroll-snap-type:y proximity;
-  /* scroll-snap-stop: always; */
-}
-
-.slides * {
-  user-select: none;
-}
-
-.slide{
-
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-start; */
-  /* flex-wrap:wrap; */
-  /* height: 100vh; */
-  /* height: auto;
-  margin-left: auto;
-  margin-right: auto; */
-  /* overflow-y: auto; */
-  position: relative;
-  /* scroll-snap-align: start; */
-  width: 100%
-}
-
-#slider {
-  width: 100vw;
-}
-
-.abstract-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-}
-
-.abstract{
-  font-size: 26pt;
+  padding-left: 10px;
   line-height: 1.2;
-  font-family: KTF2101;
-  color: black;
 }
 
 
-a{
-  font-family: KTF2101;
-  color: black;
-  text-decoration: none;
-}
 
 
-.painting{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 80%;
-  height: auto;
 
-}
 
-.preview{
-  height: 100%;
-  max-height: 100%;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  overflow-y: hidden;
-  vertical-align: text-top;
-  width:100%
-}
-
-h2.title{
-  width:100%;
-  font-size: 12;
-  margin-left: 0;
-  
-}
 
 section.text{
-  width:50%;
+  width:58%;
+  padding-right: 10px;
 }
 
 .text-body {
   display: flex;
-}
-
-.text-title {
-  display: flex;
-}
-
-section.footnote{
-  width:50%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  padding-left: 10px;
 }
 
 .text{
@@ -371,26 +176,125 @@ section.footnote{
   display: flex;
 
 }
-p.quote{
-  width: 100%;
-  font-size: 24pt;
+
+.type{
+  font-family: Neue Haas Unica;
+  width:38%;
   line-height: 1.2;
-  font-family: KTF2101;
-  padding-bottom: 10px;
-  padding-top: 100px;
-  margin-left: 0%;
+  padding: 5px;
+  border-top: 1px solid #000; /* Add a bottom border */
+}
+
+.type-01{
+  font-family: Neue Haas Unica;
+  padding-left:8%;
+  /* border-bottom: 1px solid #000; Add a bottom border */
+  /* border-collapse: collapse; */
+  width:38%;
+  border-top: 1px solid #000; /* Add a bottom border */
+}
+.type-02{
+  font-family: Neue Haas Unica;
+  padding-left:16%;
+  line-height: 1.2;
+  /* border-bottom: 1px solid #000; Add a bottom border */
+  /* border-collapse: collapse; */
+  width:38%;
+  border-top: 1px solid #000; /* Add a bottom border */
+}
+
+.type-03{
+  font-family: Neue Haas Unica;
+  padding-left:24%;
+  line-height: 1.2;
+  /* border-bottom: 1px solid #000; Add a bottom border */
+  /* border-collapse: collapse; */
+  width:38%;
+  border-top: 1px solid #000; /* Add a bottom border */
+}
+.type-04{
+  font-family: Neue Haas Unica;
+  padding-left:32%;
+  line-height: 1.2;
+  /* border-bottom: 1px solid #000; Add a bottom border */
+  /* border-collapse: collapse; */
+  width:38%;
+  border-top: 1px solid #000; /* Add a bottom border */
+}
+a{
+  font-family: Neue Haas Unica;
+  line-height: 1.2;
+  color: #000;
+  font-style: normal;
+  text-decoration: none; ;
+}
+/* .type td{
+  line-height: 1.2;
+  padding: 5px 0px;
+  border-bottom: 1px solid #000; 
+  vertical-align: top;
+  font-family: Neue Haas Unica;
+}
+
+ */
+tr:hover{
+color: silver;
+}
+a:hover{
+  color: silver;
+}
+
+.project-list {
+  width: 60%;
+  border-collapse: collapse;
+  padding-right: 10px;
+}
+
+.project-list .year {
+  font-family: Neue Haas Unica;
+}
+
+.project-list td {
+  line-height: 1.2;
+  padding: 5px 0px;
+  border-top: 1px solid #000; /* Add a bottom border */
+  text-align: left;
+  vertical-align: top;
+  font-family: Neue Haas Unica;
 }
 
 
 
-/* .frame-top-color {
-  right: 0%;
-  background: linear-gradient(180deg,#f53d69, #f4662f 22.19%,rgba(244, 102, 46, 0)
-);
-  height: 5vh;
-  } */
-/* color scheme blocks */
+/* Font Styles */
+.project-list td:first-child {  
+  text-align: left;
+  font-size: 11pt;
+  font-family: Neue Haas Unica;
+  position:relative;
+  width: 33%;
+  padding: 5px;
+  cursor: pointer;
+}
 
+.project-list td:last-child {
+  text-align: left;
+  font-size: 11pt;
+  font-family: Neue Haas Unica;
+  position:relative;
+  width: 33%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.project-list td:nth-child(2) {
+  text-align: left;
+  font-size: 11pt;
+  font-family: Neue Haas Unica;
+  position:relative;
+  width: 33%;
+  padding: 5px;
+  cursor: pointer;
+}
 
 
 
@@ -420,13 +324,27 @@ p.quote{
     }
 }
 
+
 @media (max-width: 779px) {
 
   /* your 'mobile' overriding css properties here */
+
+.type{
+    font-family: Neue Haas Unica;
+    width:98%;
+    border-top: 1px solid #000; /* Add a bottom border */
+
+  }
+  .project-list {
+    width: 98%;
+    border-collapse: collapse;
+    padding-right: 10px;
+  }
+
 section.text{
   width:100%;
   line-height: 1.5;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   }
 
   section.footnote{
@@ -455,7 +373,7 @@ section.text{
 
 
 .abstract{
-  font-size: 16pt;
+  font-size: 10pt;
   padding-bottom: 100px;
 }
 
@@ -464,29 +382,19 @@ section.text{
   font-size: 10pt;
 }
 
-.painting{
-  width: 100%;
-}
+
 p.p2{
   text-indent: 50.0px;
 }
 
 
 
-.biblio{
-  width: 100%;
-  padding-left:50px; 
-  text-indent: -50px;
-  /* padding-bottom: 300px; */
-}
 
 h2.title-50{
   display:flex;
-  top:0;
-  font-family: Neue Haas Grotesk Text W02 Medium;
   color: black;
-  width: 50%;
   padding-bottom: 20px;
+  padding-left: 0px;
   /* margin-left: 50%; */
 }
 
@@ -494,7 +402,7 @@ h2.title-50-nopadding{
   display:flex;
   top:0;
   font-family: Neue Haas Grotesk Text W02 Medium;
-  color: black;
+  color: white;
   width: 50%;
 
 }
@@ -503,7 +411,7 @@ h2.title{
   display:flex;
   top:0;
   font-family: Neue Haas Grotesk Text W02 Medium;
-  color: black;
+  color: white;
   width: 50%;
   padding-bottom: 20px;
   /* margin-left: 50%; */
@@ -519,17 +427,7 @@ h2.title{
   padding-bottom: 300px;
 }
 
-.gradient-black:before {
-  content: '';
-  top: 0;
-  right: -5px;
-  bottom: 0;
-  filter: blur(0.5rem);
-  width: 4%;
-  background:linear-gradient(rgba(255,255,255,1) 0%, rgba(0,0,0,1) 45%, rgba(50,19,19,1) 62%, rgba(255,0,0,1) 87%, rgba(255,255,255,1) 100%);
-  position: absolute;
 
-}
 
   /* utility classes, mobile */
 

@@ -6,7 +6,7 @@
 
 #slider-container {
   overflow: hidden;
-  background-color: #333333;
+  background-color: black;
   z-index: 10;
 }
 
@@ -16,12 +16,53 @@
   display: flex;
   justify-content: start;
   height: 100vh;
+  width: auto;
   transition: transform 0.5s ease;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   z-index: 10;
-
 }
 
-#images {
-  mix-blend-mode: multiply;
-}
+
+
+@media (max-width: 768px) {
+
+
+  #slider-container {
+    display: flex; /* Ensures flexbox is used for alignment */
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden; 
+    display: block; /* Ensures flexbox is used for alignment */
+    height: 100%; /* Ensure it spans the height of the container */
+  }
+
+  #slider img {
+    padding: 10px;
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    display: block; /* Ensure it's treated as a block-level element */
+    margin: 0 auto; /* Optional: Center horizontally if needed */
+    position: relative;
+    vertical-align: top; /* Aligns the image to the top of its container */
+  }
+  
+
+  /* #slider-container {
+    display: flex; /* Ensures flexbox is used for alignment */
+    /* overflow: hidden; */
+  /* }
+   */
+  /* #slider img{ */
+    /* position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    flex-shrink: 0; 
+    display: block; */
+    /* width: 100vw; Image fills the width of its container */
+    /* height: auto; Height adjusts automatically to maintain aspect ratio */
+    /* object-fit: contain; Ensures the image does not stretch or get cropped */
+    /* }  */
+  }
+
